@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="hello">Hello World</string>
+    <string name="app_name">Agenda</string>
+    <string name="ContextoDados_onCreate">
+		CREATE TABLE Contatos (ID INTEGER PRIMARY KEY AUTOINCREMENT, Nome TEXT,	Telefone TEXT, Endereco TEXT);
+	</string>
+	<string name="ContextoDados_onUpgrade">"
+		DROP TABLE IF EXISTS Contatos
+	</string>
+	<string name="contatos">Contatos</string>
+	<string name="lblNome">Nome:</string>
+	<string name="lblTelefone">Telefone:</string>
+	<string name="lblEndereco">Endereço:</string>
+	<string name="btnSalvar">Salvar</string>
+	<string name="btnCancelar">Cancelar</string>
+</resources>

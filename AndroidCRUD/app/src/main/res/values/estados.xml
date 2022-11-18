@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="estados">
+        <item>RS</item>
+        <item>SC</item>
+        <item>PR</item>
+    </string-array>
+</resources>

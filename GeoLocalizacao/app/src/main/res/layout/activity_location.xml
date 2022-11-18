@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ip">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:text="177.155.44.231"
+            android:ems="10"
+            android:id="@+id/txtIP"
+            android:hint="Digite o IP"
+            android:inputType="number|text" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Carregar"
+            android:id="@+id/btnCarregar"
+            android:onClick="btnCarregarOnClick" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Geolocalização"
+        android:textStyle="bold"
+        android:id="@+id/lblTitulo"
+        android:layout_below="@+id/ip" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="País: Brazil"
+        android:id="@+id/lblCountry"
+        android:layout_below="@+id/lblTitulo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Estado: Rio Grande do Sul"
+        android:id="@+id/lblRegion"
+        android:layout_below="@+id/lblCountry" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cidade: Gravataí"
+        android:id="@+id/lblCity"
+        android:layout_below="@+id/lblRegion" />
+</RelativeLayout>
